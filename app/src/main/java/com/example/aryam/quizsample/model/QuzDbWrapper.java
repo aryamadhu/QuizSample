@@ -10,7 +10,7 @@ import java.sql.SQLException;
  * Created by arya.m on 10/5/2016.
  */
 public class QuzDbWrapper {
-    static final String TABLE_QUESTION="Questiontbl";
+    static final String TABLE_QUESTION= "Questiontbl";
     QuzDb qdb;
 
     public boolean openLocalDb(Context ctx){
@@ -34,6 +34,9 @@ public class QuzDbWrapper {
         }
     }
 
+    public Cursor readAllData(){
+        return qdb.readAllRecords(TABLE_QUESTION, null);
+    }
 
 
 }

@@ -20,7 +20,7 @@ public class QuzDb extends SQLiteOpenHelper {
     private final Context myContext;
 
     //The Android's default system path of your application database.
-    private static String DB_PATH = "/data/data/com.android.aryam.quizsample/databases/";
+    private static String DB_PATH = "/data/data/com.android.aryam.quizsample/app/src/main/java/databases/";
     private static String DB_NAME = "quiz.db";
 
     private SQLiteDatabase myDataBase;
@@ -130,4 +130,7 @@ public class QuzDb extends SQLiteOpenHelper {
     }
 
 
+    public synchronized Cursor readAllRecords(String tableName, String[] whichColumns){
+        return myDataBase.query(tableName, whichColumns, null, null,null,null,null);
+    }
 }
