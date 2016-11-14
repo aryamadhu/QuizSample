@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.aryam.quizsample">
+    package="com.example.aryam.test">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -19,8 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SummaryActivity" android:screenOrientation="portrait"/>
 
+        <activity android:name=".SelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SummaryActivity" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

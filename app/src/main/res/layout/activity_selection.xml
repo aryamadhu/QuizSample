@@ -16,30 +16,29 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="@dimen/activity_vertical_margin"
-        android:id="@+id/spinner_select_subject"
         android:layout_below="@+id/toolbar"
         android:layout_alignParentStart="true"
         android:layout_marginTop="77dp">
 
         <TextView
-        android:layout_width="341dp"
-        android:layout_height="wrap_content"
-        android:text="Select Subject"
-        android:textColor="@android:color/tertiary_text_dark"
-        android:padding="5dp"
-        android:background="#FFE3E3E3"
-        android:clickable="true" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Subject"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:padding="5dp"
+            android:background="#FFE3E3E3"
+            android:clickable="true" />
 
 
 
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner_select_subject"
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_select_subject"
 
-       />
-<include
-    layout="@layout/view_shadow_light_blue"/>
+            />
+        <include
+            layout="@layout/view_shadow_light_blue"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -51,19 +50,19 @@
             android:background="#FFE3E3E3"/>
 
 
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner_select_topic"
-       />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_select_topic"
+            />
 
 
 
 
-    <include
+        <include
 
-       layout="@layout/view_shadow_light_blue"
-        />
+            layout="@layout/view_shadow_light_blue"
+            />
         <Button
             android:id="@+id/button_next"
             android:layout_width="match_parent"
