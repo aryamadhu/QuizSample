@@ -41,7 +41,7 @@
             layout="@layout/view_shadow_light_blue"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="358dp"
             android:layout_height="wrap_content"
             android:text="SelectTopic"
             android:textColor="@android:color/tertiary_text_dark"
